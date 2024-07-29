@@ -1,20 +1,16 @@
 {
-  "name": "rabbitmq-overload",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "@types/amqplib": "^0.10.5",
     "@types/uuid": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "scripts": {
+    "start:publisher": "ts-node ./src/publisher.ts",
+    "start:receiver": "ts-node ./src/receiver.ts"
+  },
+  "dependencies": {
     "amqplib": "^0.10.4",
     "uuid": "^10.0.0"
-  },
-  "devDependencies": {
-    "@types/amqplib": "^0.10.5"
   }
 }
